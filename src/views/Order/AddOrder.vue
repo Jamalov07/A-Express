@@ -44,7 +44,7 @@ async function createOrder() {
 
   <form action="" @submit.prevent="createOrder">
     <div class="flex justify-between items-end gap-[20px] flex-wrap">
-      <div>
+      <div class="h-20">
         <Label label-id="Buyurtmachi">
           <input
             type="text"
@@ -64,7 +64,7 @@ async function createOrder() {
         </div>
       </div>
 
-      <div>
+      <div class="h-20">
         <Label label-id="Telefon raqami">
           <input
             type="text"
@@ -84,7 +84,7 @@ async function createOrder() {
         </div>
       </div>
 
-      <div>
+      <div class="h-20">
         <Label label-id="Mahsulot linki">
           <input
             type="text"
@@ -104,7 +104,7 @@ async function createOrder() {
         </div>
       </div>
 
-      <div>
+      <div class="h-20">
         <Label label-id="Mahsulot narxi">
           <input
             type="text"
@@ -124,7 +124,7 @@ async function createOrder() {
         </div>
       </div>
 
-      <div>
+      <div class="h-20">
         <Label label-id="Oldindan to'lov">
           <input
             type="text"

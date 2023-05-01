@@ -38,7 +38,10 @@ checkAdminToken();
 </script>
 
 <template>
-  <div v-if="!adminLogin.isLogged" class="bg-white dark:bg-[#121212] w-screen h-screen">
+  <div
+    v-if="!adminLogin.isLogged"
+    class="bg-white dark:bg-[#121212] w-screen h-screen"
+  >
     <section class="">
       <div class="absolute top-5 right-5">
         <router-link to="/signin" class="hover:underline text-sky-500"
@@ -46,9 +49,11 @@ checkAdminToken();
         </router-link>
       </div>
       <div
-        class="flex w-1/2  items-center justify-center mx-auto h-screen lg:py-0"
+        class="flex w-1/2 items-center justify-center mx-auto h-screen lg:py-0"
       >
-        <div class="bg-white p-2 dark:bg-[#262626] rounded-md w-full max-w-[600px] min-w-[300px]">
+        <div
+          class="bg-white p-2 dark:bg-[#262626] rounded-md w-full max-w-[600px] min-w-[300px]"
+        >
           <div class="">
             <h1
               class="text-[22px] text-[#4763E4] font-bold text-center leading-tight tracking-tight md:text-2xl"
@@ -66,7 +71,9 @@ checkAdminToken();
             <form class="w-full" action="#" @submit.prevent="login">
               <div>
                 <label for="username" class="block">
-                  <p class="mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                  <p
+                    class="mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >
                     Enter username
                   </p>
                   <input
@@ -81,7 +88,9 @@ checkAdminToken();
               </div>
               <div class="mt-[20px]">
                 <label for="password" class="block">
-                  <p class="mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                  <p
+                    class="mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >
                     Enter user password
                   </p>
                   <input
@@ -98,7 +107,7 @@ checkAdminToken();
                 type="submit"
                 class="w-full mt-[20px] text-white bg-[#4763E4] hover:bg-primary-700 focus:outline-none font-medium rounded-lg text-[18px] px-5 py-2 text-center"
               >
-                Tekshirish
+                Kirish
               </button>
               <p class="text-center mt-[10px]">
                 <a href="#" class="font-medium hover:underline text-[#5C73DB]"
